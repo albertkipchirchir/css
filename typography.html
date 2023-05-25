@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Typography</title>
+    <link rel="stylesheet" href="./file.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+      body {
+        color: aquamarine;
+      }
+      #p1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: "Dancing Script", Georgia, "Times New Roman", Times, serif;
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 60px;
+        word-spacing: 30px;
+      }
+      .pa {
+        font-size: 20px;
+      }
+      h1 {
+        color: green;
+        text-align: right;
+        text-decoration: overline;
+        text-transform: capitalize;
+        letter-spacing: 10px;
+        direction: rtl;
+        background-color: aqua;
+        display: block;
+      }
+      div {
+        color: black;
+      }
+      p {
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: brown">css typography</h1>
+    <span>inline</span>
+    <p class="pa" style="color: red">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nisi
+      eligendi quisquam eveniet dicta ipsum accusantium ullam? Iste id minus
+      amet repudiandae similique sapiente? Eius beatae et voluptatibus
+      laudantium in?
+    </p>
+    <div>
+      <p class="pa" id="p1">para 1</p>
+      <span>
+        <p>kfsxnk</p>
+      </span>
+      <p>para</p>
+    </div>
+
+    <h2>
+      CSS Specificity -- determines the selector whose code block will be
+      applied to an element
+    </h2>
+    <p>discus how the browser calculates style specificty</p>
+  </body>
+</html>

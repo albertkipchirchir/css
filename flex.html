@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flex-box</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .item {
+        width: 100%;
+        /* width: 200px; */
+        margin: 20px;
+        border: 2px solid;
+      }
+      img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 750px) {
+        .container {
+          flex-direction: column;
+          background-color: lightgreen;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .container {
+          background-color: blueviolet;
+        }
+      }
+
+      @media screen and (min-width: 1000px) {
+        body {
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Flex</h1>
+
+    <div class="container">
+      <div class="item">
+        <img src="./images/fort-jesus.jfif" alt="" /> <br />
+        <p>fort jesus</p>
+      </div>
+      <div class="item">
+        <img src="./images/visa.png" alt="" /> <br />
+        <p>visa card logo</p>
+      </div>
+      <div class="item">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis,
+          officia? Maiores, dolorem? Quis ipsum reprehenderit nisi perferendis
+          quod, quidem tenetur incidunt corrupti voluptatem non commodi delectus
+          iste dolores, debitis officiis?
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium,
+          nisi? Ipsam eius, ab laudantium error cumque nisi molestiae aliquid
+          aut!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

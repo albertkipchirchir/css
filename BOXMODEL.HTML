@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css box model</title>
+    <style>
+      .box {
+        background-color: green;
+        color: white;
+        font-size: 32px;
+        margin: 30px;
+        border: 6px solid orange;
+        padding: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 15px 25px;
+        /* display: block; */
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="box">BOX MODEL</h1>
+
+    <span class="box">box</span>
+
+    <a href="" class="box">box</a>
+
+    <div class="box">box</div>
+    <p>
+      The box model is a fundamental concept in web development and CSS
+      (Cascading Style Sheets). It describes how elements on a webpage are
+      structured and how their content, padding, border, and margin areas are
+      calculated and displayed.
+    </p>
+    <p>The box model consists of four main components:</p>
+    <ol>
+      <li>
+        <p>
+          Content: It represents the actual content of an element, such as text,
+          images, or other HTML elements.
+        </p>
+      </li>
+      <li>
+        <p>
+          Padding: It is the space between the content and the element&#39;s
+          border. Padding can be specified using CSS properties like
+          <code>padding-top</code>, <code>padding-right</code>,
+          <code>padding-bottom</code>, and <code>padding-left</code>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Border: It is a line that surrounds the content and padding of an
+          element. Borders can be styled with different colors, widths, and
+          styles using CSS properties like <code>border-color</code>,
+          <code>border-width</code>, and <code>border-style</code>.
+        </p>
+      </li>
+      <li>
+        <p>
+          Margin: It is the space outside the element&#39;s border, creating a
+          gap between adjacent elements. Margins can be specified using CSS
+          properties like <code>margin-top</code>, <code>margin-right</code>,
+          <code>margin-bottom</code>, and <code>margin-left</code>.
+        </p>
+      </li>
+    </ol>
+    <p>
+      The total size of an element is calculated by adding the content
+      width/height, padding, and border width. The margin is not included in the
+      element&#39;s total size.
+    </p>
+    <p>
+      By default, the box model calculates dimensions using the content box, but
+      you can change this behavior using the <code>box-sizing</code> property.
+      The two possible values for <code>box-sizing</code> are:
+    </p>
+    <ol>
+      <li>
+        <p>
+          <code>content-box</code>: This is the default value, where the
+          dimensions of an element are calculated based on the content
+          width/height, excluding padding and border.
+        </p>
+      </li>
+      <li>
+        <p>
+          <code>border-box</code>: When <code>box-sizing</code> is set to
+          <code>border-box</code>, the dimensions of an element include the
+          content width/height, padding, and border. In this mode, if you
+          specify a fixed width or height for an element, it includes the
+          padding and border within that size, and the content area will shrink
+          accordingly.
+        </p>
+      </li>
+    </ol>
+    <p>
+      The box model is essential for understanding how elements are positioned
+      and how their sizes are determined on a webpage. It allows developers to
+      control the spacing and layout of elements effectively using CSS.
+    </p>
+  </body>
+</html>
